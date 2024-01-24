@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set character set and viewport for responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set the title of the document -->
+    <title>Sun Animation</title>
+</head>
+<style>
+    /* Styles for the container div and sun elements */
+    div {
+        display: flex;
+        background-color: rgb(255, 217, 0); /* Set the background color to a yellowish shade */
+        width: 200px;
+        height: 100px;
+        margin: 39px;
+        padding: 5px;
+        border-top-left-radius: 100%; /* Apply border-radius for a rounded top-left corner */
+        border-bottom-left-radius: 100%; /* Apply border-radius for a rounded bottom-left corner */
+        border-top-right-radius: 10px; /* Apply border-radius for a rounded top-right corner */
+        border-bottom-right-radius: 10px; /* Apply border-radius for a rounded bottom-right corner */
+    }
+
+    /* Individual sunbeam styles with rotation and positioning */
+    .a { margin-left: 37px; margin-top: -10px; }
+    .b { transform: rotate(-30deg); margin-left: 78px; }
+    .c { transform: rotate(-60deg); margin-left: 190px; margin-top: -38px; }
+    .d { transform: rotate(-90deg); margin-left: 342px; margin-top: -109px; }
+    .e { transform: rotate(-120deg); margin-left: 495px; margin-top: -190px; }
+    .f { transform: rotate(-150deg); margin-left: 608px; margin-top: -260px; }
+    .g { margin-left: 649px; margin-top: -301px; border-top-left-radius: 10px; border-bottom-left-radius: 10px; border-top-right-radius: 100%; border-bottom-right-radius: 100%; }
+
+    /* Styles for the sun text with animation on hover */
+    .s {
+        background-color: white; /* Set background color to white */
+        border: none; /* Remove border */
+        margin-left: 360px; /* Adjust margin for positioning */
+        margin-top: -100px; /* Adjust margin for positioning */
+        font-size: 40px; /* Set font size */
+        text-transform: uppercase; /* Convert text to uppercase */
+        transition: transform 0.4s ease-in-out; /* Apply transform transition for smooth animation */
+        font-family: monospace; /* Set font family to monospace */
+    }
+
+    /* Hover styles for the sun text */
+    .s:hover {
+        color: gold; /* Change text color to gold on hover */
+        transform: scale(1.2); /* Apply scale transformation on hover */
+    }
+</style>
+<body>
+    <!-- Individual sun elements with class names -->
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="d"></div>
+    <div class="e"></div>
+    <div class="f"></div>
+    <div class="g"></div>
+
+    <!-- Sun text element with class name -->
+    <div class="s">the sun</div>
+</body>
+</html>
